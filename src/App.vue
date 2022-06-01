@@ -1,9 +1,17 @@
-<script setup></script>
-
 <template>
-  <header>home | Jogadores | Time</header>
-  <main>Main</main>
-  <footer>Rodapé</footer>
+ <header class="menu-superior">
+    <div class="menu-esquerdo">
+      <span>home </span>
+      <span>|</span>
+      <span>Jogadores</span>
+      <span>|</span>
+      <span>Time</span>
+    </div>
+    <div class="menu-direito">
+      <span>Sair</span>
+    </div>
+  </header>
+  <RouterView />
 </template>
 
 <style>
@@ -30,5 +38,13 @@ footer {
 
 main {
   height: 70%;
+}
+header span {
+  padding: 0 20px;
+}
+header.menu-superior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 </style>
